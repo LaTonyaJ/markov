@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LaTonyaJ/markov/issues"
   },
-  "homepage": "https://github.com/LaTonyaJ/markov#readme"
+  "homepage": "https://github.com/LaTonyaJ/markov#readme",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
 }
