@@ -11,14 +11,14 @@ function catFile(file){
             console.log(`File ${file} cannot be found!`)
             process.exit(1);
         }else{
-            console.log(new markov.MarkovMachine(data));
+            console.log(new markov.MarkovMachine(data).makeText());
         }
     })
 }
 
 async function catUrl(url){
         await axios.get(url)
-        .then(res => {console.log(new markov.MarkovMachine(res.data))})
+        .then(res => {console.log(new markov.MarkovMachine(res.data).makeText())})
         .catch(err => {console.log(`The URL ${url} could not be found!`)})
 }
 
